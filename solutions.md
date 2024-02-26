@@ -142,6 +142,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx
 - access application from browser on address: `my-java-app.com`
 
 **LKE**
+- set the HOST variable found at line 48 of the index.html to the Linode node-balancer address
 - set the host name in java-app-ingress.yaml line 7 to Linode node-balancer address
 - create ingress component: `kubectl apply -f java-app-ingress.yaml`
 - access application from browser on Linode node-balancer address
